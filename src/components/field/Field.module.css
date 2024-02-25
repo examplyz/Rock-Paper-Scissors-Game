@@ -1,0 +1,79 @@
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 200px;
+	width: 100%;
+}
+
+.fieldCol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 200px;
+	width: 100%;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.field h3 {
+	font-size: 40px;
+}
+
+.fieldAppearance {
+	position: absolute;
+	left: -1500px;
+	animation: appearance 1s forwards;
+	animation-delay: 1s;
+}
+
+.winnerAppearance {
+	position: absolute;
+	top: -800px;
+	animation: winnerAppearance 1s forwards;
+	animation-delay: 1s;
+}
+
+@keyframes winnerAppearance {
+	100% {
+		top: 40px;
+	}
+}
+
+@keyframes appearance {
+	100% {
+		left: 0px;
+	}
+}
+
+.fieldAppearance2 {
+	position: absolute;
+	left: -1500px;
+	animation: appearance2 2.5s forwards;
+	animation-delay: 0.5s;
+}
+
+@keyframes appearance2 {
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	25% {
+		transform: translate(5px, 5px) rotate(5deg);
+		left: 0px;
+	}
+	50% {
+		transform: translate(0, 0) rotate(0eg);
+		left: 0px;
+	}
+	75% {
+		transform: translate(-5px, 5px) rotate(-5deg);
+		left: 0px;
+	}
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+		left: 0px;
+	}
+}
